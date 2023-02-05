@@ -1,4 +1,3 @@
-
 moeum={'a','e','i','o','u'}
 while True:
     test_case=input()
