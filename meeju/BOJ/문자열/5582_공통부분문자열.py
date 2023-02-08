@@ -1,0 +1,26 @@
+import sys
+input = sys.stdin.readline
+
+'''
+input : ABRACADABRA
+ECADADABRBCRDARA
+output : 5'''
+
+# s1=list(input().rstrip())
+# s2=list(input().rstrip())
+
+s1=input()
+s2=input()
+max_str_len=0
+
+dp=[[0]*(len(s2)+1) for _ in range(len(s1)+1)]
+
+for i in range(1,len(s1)+1):
+    for j in range(1,len(s2)+1):
+        if (s1[i-1]==s2[j-1]):
+            dp[i][j]=dp[i-1][j-1]+1
+            max_str_len=max(dp[i][j],max_str_len)
+print(max_str_len)
+
+
+
