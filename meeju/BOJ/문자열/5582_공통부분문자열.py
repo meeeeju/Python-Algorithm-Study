@@ -1,3 +1,4 @@
+# 다른 사람의 코드를 참고함 !!
 import sys
 input = sys.stdin.readline
 
