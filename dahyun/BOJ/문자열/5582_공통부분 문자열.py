@@ -1,3 +1,4 @@
+#시간초과나서 블로그 봤습니다.
 import sys
 input=sys.stdin.readline
 
