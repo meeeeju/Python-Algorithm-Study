@@ -1,3 +1,4 @@
+# 1424ms/33392kb	
 import sys
 import math
 input = sys.stdin.readline
