@@ -1,4 +1,5 @@
 #블로그 참조
+#메모리 : 33508 시간 : 88ms
 from math import sqrt
 N,M=map(int,input().split())
 
