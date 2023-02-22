@@ -1,3 +1,4 @@
+# 31256KB / 40
 A, B = map(int, input().split())
 count = 0
 while A < B:
