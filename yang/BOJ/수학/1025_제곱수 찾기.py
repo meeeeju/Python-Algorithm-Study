@@ -71,5 +71,5 @@ ansSet = sorted(list(ansSet), reverse=True)
 for i in ansSet:
     if i**0.5==int(i**0.5):
         ans = max(ans, i)
-        
+        break
 print(ans)
