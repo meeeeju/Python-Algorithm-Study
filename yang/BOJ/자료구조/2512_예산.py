@@ -3,19 +3,21 @@ import sys
 input = sys.stdin.readline
 def solve():
     maxRequest = max(request)
-    sumRequest = 0
-    ans = 0
-    count = N
-    while sumRequest+count <= M:
+    ans = 0 # 현재 배정한 예산
+    sumRequest = 0 # ans 값으로 예산을 배정했을 때, 예산요청들의 합
+    count = N # ans값으로 배정했을 때, 더 늘어날 수 있는 예산 요청의 수
+    while sumRequest+count <= M: # 예산을 1 늘렸을 때 count값 만큼 늘어난다는 점 이용 // N<=M이므로 처음엔 무조건 통과하게 되어있음
         if count > 0:
-            ans += (M - sumRequest)//count
-        else: break
-        if ans > maxRequest:
+            ans += (M - sumRequest)//count # (여유예산//count) 한 만큼을 추가로 예산에 배정
+        else: break # count가 0이라는건 현재 더 나눠줄 수 있는 예산요청이 없다는 뜻
+        
+        if ans > maxRequest: # 배정되는 예산의 최댓값은 maxRequest값임
             ans = maxRequest
             break
+        
         count = 0
         sumRequest = 0
-        for r in request:
+        for r in request: # count와 sumRequest 계산
             if ans >= r:
                 sumRequest += r
             else:
