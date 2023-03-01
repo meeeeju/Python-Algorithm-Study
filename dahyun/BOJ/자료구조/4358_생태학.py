@@ -9,6 +9,6 @@ while True:
     if tree=='': break
     if tree in tree_type: tree_type[tree]+=1  # tree_type에 존재하면 개수 +1
     else : tree_type[tree]=1  # tree_type에 존재하지 않으면 1로 초기화
-    total+=1산
+    total+=1
 for t in sorted(tree_type.items(), key=lambda x : x[0]):  # tree 이름을 사전 순으로 정렬 후 계
     print(t[0],format((t[1]/total)*100,".4f"))
