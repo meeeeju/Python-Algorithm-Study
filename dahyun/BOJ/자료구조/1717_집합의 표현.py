@@ -1,4 +1,5 @@
 # 80524 KB / 348 ms
+# 교수니 코드 참고
 import sys
 input=sys.stdin.readline
 def root(i): # 루트 찾는 함수
