@@ -31,3 +31,4 @@ if not result : print(-1)
 else:
     for r in sorted(result):
         print(r)
+        
