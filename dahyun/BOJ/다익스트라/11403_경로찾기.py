@@ -14,7 +14,7 @@ G=[]  # 임시 그래프
 result=[[0 for _ in range(N)] for _ in range(N)]   # 연결되어 있는지 저장하는 그래프
 for i in range(N):
     G.append(list(map(int,sys.stdin.readline().split())))
-    for j in range(N)
+    for j in range(N):
         if G[i][j]==1: graph[i].append(j)
 visited=[]
 for i in range(N):
