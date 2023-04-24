@@ -1,5 +1,6 @@
 #BaekJoon 2343 기타레슨
 # 42340 KB / 300 ms
+# 최솟값과 최댓값의 범위 문제 때문에 질문게시판 참고
 import sys
 def check(length):
     sum= 0  # 강의 길이
