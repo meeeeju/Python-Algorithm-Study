@@ -1,4 +1,3 @@
-#BaekJoon 1303 전투
 #31268 KB / 52 ms
 import sys
 input=sys.stdin.readline
