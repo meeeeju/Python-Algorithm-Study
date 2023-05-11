@@ -10,4 +10,5 @@ lope.sort(reverse=True)
 ans = lope[0]
 for i in range(n):
     ans = max(ans, lope[i]*(i+1))
+
 print(ans)
