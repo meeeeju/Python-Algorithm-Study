@@ -1,4 +1,4 @@
-#블로그 참고 data를 순열로 만들어서 그중에 체크한다는걸 생각하지 못함ㅠ
+#블로그 참고 data를 순열로 만들어서 그중에 체크한다는걸 생각하지 못함ㅠ..
 #메모리 :31256 시간 :64
 from itertools import combinations, permutations
 import sys
