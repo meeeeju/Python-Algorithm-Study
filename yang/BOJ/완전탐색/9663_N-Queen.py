@@ -1,5 +1,6 @@
 # 블로그 참고
 # 212232KB / 29824ms
+
 N = int(input())
 queen = [-1] * N
 
