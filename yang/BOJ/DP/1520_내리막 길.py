@@ -1,4 +1,5 @@
 # 블로그 참고
+# https://chldkato.tistory.com/114
 
 import sys
 input = sys.stdin.readline
