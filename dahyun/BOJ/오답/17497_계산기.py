@@ -5,6 +5,7 @@ while N:
     if N&1 : nlist.append("[/]");N*=2
     elif N&2 : nlist.append("[+]"); N-=2
     else : nlist.append("[*]");N//=2
+        
 if len(nlist)>99 : print(-1)
 else:
     print(len(nlist))
