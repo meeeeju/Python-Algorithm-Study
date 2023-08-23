@@ -1,4 +1,4 @@
-# 116824KB / 580ms
+# 116824KB / 580ms (PyPy3)
 from sys import stdin
 input = stdin.readline
 
