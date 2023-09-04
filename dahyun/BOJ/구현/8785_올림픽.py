@@ -1,15 +1,16 @@
-#31256KB/	68ms
+#31256KB/	48ms
 '''
 1. 금메달 수가 더 많은 나라 
 2. 금메달 수가 같으면, 은메달 수가 더 많은 나라
 3. 금, 은메달 수가 모두 같으면, 동메달 수가 더 많은 나라 
 '''
 import sys
+input = sys.stdin.readline
 
-N,K = map(int,sys.stdin.readline().split()) # N: 국가의 수 , K : 등수를 알고 싶은 국가
+N,K = map(int,input().split()) # N: 국가의 수 , K : 등수를 알고 싶은 국가
 rank = []
 for _ in range(N):
-    rank.append(list(map(int,sys.stdin.readline().split())))
+    rank.append(list(map(int,input().split())))
 
 rank=sorted(rank,key=lambda x: (-x[1],-x[2],-x[3]))  # 금메달,은메달,동메달 순으로 정렬
 index=0
